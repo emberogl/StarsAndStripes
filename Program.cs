@@ -10,7 +10,6 @@
         public static short StripeWidth { get; } = 2;
         public static short Stripes { get; } = 7;
 
-
         static void Main(string[] args)
         {
             // White grid generation
@@ -69,6 +68,7 @@
                 Console.WriteLine();
             }
 
+            Console.SetCursorPosition(FlagLength, FlagWidth);
             Console.ResetColor();
             Console.ReadKey();
         }
